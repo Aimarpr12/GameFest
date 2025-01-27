@@ -9,7 +9,7 @@ import FooterSection from './components/FooterSection.vue';
     <!-- Navegación fija en la parte superior -->
     <Navegation />
     <!-- Área del contenido principal (80%) -->
-    <div>
+    <div style="height: 80%;">
       <router-view />
     </div>
     <!-- Pie de página fijo en la parte inferior -->
