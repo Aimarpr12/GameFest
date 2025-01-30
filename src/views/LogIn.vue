@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-center min-h-screen bg-gradient-to-r">
+    <div class="flex items-center h-full justify-center overflow-hidden">
       <div class="w-full max-w-md bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
         <h1 class="text-2xl font-bold text-center text-gray-900 dark:text-white">
           Iniciar Sesión

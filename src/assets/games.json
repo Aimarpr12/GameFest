@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "titulo": "Minecraft",
+      "genero": "Sandbox",
+      "descripcion": "Un juego de construcción y aventuras en un mundo abierto compuesto por bloques, donde los jugadores pueden explorar, recolectar recursos y crear estructuras.",
+      "plataformas": ["PC", "Consolas", "Móviles"],
+      "imagen": "https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_4/2x1_NSwitch_Minecraft_image1600w.jpg"
+    },
+    {
+      "id": 2,
+      "titulo": "Fortnite",
+      "genero": "Battle Royale",
+      "descripcion": "Un juego multijugador en línea donde 100 jugadores compiten para ser el último en pie en una isla que se va reduciendo, con construcción de estructuras y una variedad de armas.",
+      "plataformas": ["PC", "Consolas", "Móviles"],
+      "imagen": "https://cdn2.unrealengine.com/social-image-chapter4-s3-3840x2160-d35912cc25ad.jpg"
+    },
+    {
+      "id": 3,
+      "titulo": "Apex Legends",
+      "genero": "Battle Royale",
+      "descripcion": "Un juego de disparos en primera persona donde equipos de tres compiten en una arena futurista, cada personaje con habilidades únicas.",
+      "plataformas": ["PC", "Consolas"],
+      "imagen": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/header.jpg?t=1736940058"
+    },
+    {
+      "id": 4,
+      "titulo": "League of Legends",
+      "genero": "MOBA (Arena de batalla en línea multijugador)",
+      "descripcion": "Un juego de estrategia en tiempo real donde equipos de cinco jugadores luchan para destruir la base del equipo contrario.",
+      "plataformas": ["PC"],
+      "imagen": "https://www.infobae.com/resizer/v2/CNTWUAMXZRF3BPIYPCNPFHOMJQ.jpg?auth=4dbb84a1e5b92e9729f0a8939402342e9e18fbffffa9084efcc57a11d40a7e5d&smart=true&width=992&height=558&quality=85"
+    },
+    {
+      "id": 5,
+      "titulo": "Call of Duty: Warzone",
+      "genero": "Battle Royale",
+      "descripcion": "Un juego de disparos en primera persona que ofrece combates multijugador en un mapa extenso, con modos de juego variados y la posibilidad de revivir compañeros.",
+      "plataformas": ["PC", "Consolas"],
+      "imagen": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962663/header.jpg?t=1731603761"
+    },
+    {
+      "id": 6,
+      "titulo": "Valorant",
+      "genero": "Shooter táctico",
+      "descripcion": "Un juego de disparos en primera persona basado en equipos, donde los jugadores eligen agentes con habilidades únicas y compiten en rondas para completar objetivos.",
+      "plataformas": ["PC"],
+      "imagen": "https://cdn1.epicgames.com/offer/cbd5b3d310a54b12bf3fe8c41994174f/EGS_VALORANT_RiotGames_S1_2560x1440-1dade6e50659c8e05805cb150b349e56"
+    },
+    {
+      "id": 7,
+      "titulo": "Destiny 2",
+      "genero": "Shooter en primera persona",
+      "descripcion": "Un juego de disparos en línea con elementos de rol, donde los jugadores asumen el papel de Guardianes para proteger la última ciudad segura de la humanidad.",
+      "plataformas": ["PC", "Consolas"],
+      "imagen": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1085660/header_latam.jpg?t=1734467041"
+    },
+    {
+      "id": 8,
+      "titulo": "Elden Ring",
+      "genero": "RPG de acción",
+      "descripcion": "Un juego de rol y acción en un mundo abierto, desarrollado por FromSoftware, que ofrece una experiencia desafiante y una narrativa profunda.",
+      "plataformas": ["PC", "Consolas"],
+      "imagen": "https://gaming-cdn.com/images/products/4824/616x353/elden-ring-pc-juego-steam-europe-cover.jpg?v=1734078514"
+    },
+    {
+      "id": 9,
+      "titulo": "Counter-Strike 2",
+      "genero": "Shooter táctico",
+      "descripcion": "La secuela del clásico juego de disparos en primera persona, que enfrenta a equipos de terroristas y antiterroristas en misiones de rescate de rehenes y desactivación de bombas.",
+      "plataformas": ["PC"],
+      "imagen": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/730/header.jpg?t=1729703045"
+    }
+  ]
+  
