@@ -1,9 +1,9 @@
 <template>
-  <div v-if="isOpen" class="fixed inset-0 flex items-center justify-center bg-opacity-20 backdrop-blur-sm z-50">
+  <div v-if="isOpen" class="fixed inset-0 flex items-center justify-center backdrop-blur-sm z-50">
     <div class="bg-white p-6 rounded-lg max-w-lg w-full">
       <!-- Cerrar el modal -->
     <button @click="closeModal" type="button"
-      class="justify-end text-gray-400 bg-transparent hover:bg-gray-200 rounded-lg text-sm ms-auto inline-flex w-full items-center dark:hover:bg-gray-600 dark:hover:text-white"
+      class="justify-end text-gray-400 bg-transparent rounded-lg text-sm ms-auto inline-flex w-full items-center "
       data-modal-hide="default-modal">
       <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
