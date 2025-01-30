@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-sm bg-white rounded-lg shadow-sm text-black">
+  <div class="max-w-sm bg-white rounded-lg shadow-sm text-black" @click="openModal">
     <!-- Imagen del evento -->
     <img class="w-full h-48 object-cover rounded-t-lg" :src="event.imagen" alt="Imagen del evento" />
     
@@ -16,9 +16,17 @@
 </template>
 
 <script>
+import { useModalStore } from '@/stores/modalStore'; // Asegúrate de importar el store
+
 export default {
   props: {
     event: Object, // Propiedad que recibe un objeto event
+  },
+  methods: {
+    openModal() {
+      const modalStore = useModalStore();
+      modalStore.openModal(this.event); // Llama a la acción openModal del store con el evento seleccionado
+    },
   },
 };
 </script>
