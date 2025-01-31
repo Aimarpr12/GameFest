@@ -30,7 +30,8 @@
     </div>
 
     <!-- Mostrar los eventos filtrados -->
-    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 justify-items-center">
+    <div
+      class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 justify-items-center">
       <div v-for="event in filteredEventsList" :key="event.id" class="cursor-pointer" @click="openModal(event)">
         <EventCard :event="event" />
       </div>
@@ -41,57 +42,44 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { useEventStore } from '@/stores/eventStore';
+import { useModalStore } from "@/stores/modalStore";
 import EventCard from '@/components/EventCard.vue';
 import EventDetails from '@/components/EventDetails.vue';
-import { useModalStore } from "@/stores/modalStore";
+import { ref, computed, onMounted } from 'vue';
 
-export default {
-  components: {
-    EventCard,
-    EventDetails,
-  },
-  data() {
-    return {
-      selectedType: 'Todos los tipos', // Estado para el filtro por tipo (inicializado con "Todos los tipos")
-      selectedDate: '', // Estado para el filtro por fecha
-      onlyWithPlazas: false, // Estado para el filtro por plazas disponibles
-    };
-  },
-  computed: {
-    eventTypes() {
-      const eventStore = useEventStore();
-      return eventStore.eventTypes; // Tipos de eventos extraídos del store
-    },
-    minDate() {
-      const eventStore = useEventStore();
-      return eventStore.availableDates.length > 0 ? eventStore.availableDates[0] : '';
-    },
-    maxDate() {
-      const eventStore = useEventStore();
-      return eventStore.availableDates.length > 0 ? eventStore.availableDates[eventStore.availableDates.length - 1] : '';
-    },
-    filteredEventsList() {
-      const eventStore = useEventStore();
-      return eventStore.filteredEvents(
-        this.selectedType,
-        this.selectedDate,
-        this.onlyWithPlazas
-      );
-    },
-  },
-  mounted() {
-    const eventStore = useEventStore();
-    eventStore.loadEvents(); // Cargar los eventos cuando el componente se monte
-  },
-  methods: {
-    // Método para abrir el modal
-    openModal(event) {
-      const modalStore = useModalStore();
-      modalStore.openModal(event); // Abrir el modal con el evento seleccionado
-    },
-  },
+// Variables y stores
+const modalStore = useModalStore();
+const eventStore = useEventStore();
+
+// Filtros reactivos
+const selectedType = ref('Todos los tipos'); // Tipo de evento seleccionado
+const selectedDate = ref(''); 
+const onlyWithPlazas = ref(false);
+
+const eventTypes = computed(() => eventStore.eventTypes);
+const minDate = computed(() =>
+  eventStore.availableDates.length > 0 ? eventStore.availableDates[0] : ''
+);
+const maxDate = computed(() =>
+  eventStore.availableDates.length > 0
+    ? eventStore.availableDates[eventStore.availableDates.length - 1]
+    : ''
+);
+
+const filteredEventsList = computed(() =>
+  eventStore.filteredEvents(selectedType.value, selectedDate.value, onlyWithPlazas.value)
+);
+
+onMounted(() => {
+  eventStore.loadEvents();
+});
+
+// Método para abrir el modal
+const openModal = (event) => {
+  debugger;
+  modalStore.openModal(event);
 };
 </script>
 

@@ -9,6 +9,7 @@
     <main class="flex-grow overflow-y-auto pb-16"> <!-- Se agrega padding-bottom para evitar que el contenido se sobreponga al footer -->
       <router-view />
     </main>
+    <LoginComponent />
 
     <!-- Pie de página fijo -->
     <footer class="w-full">
@@ -20,4 +21,5 @@
 <script setup>
 import Navegation from './components/Navegation.vue';
 import FooterSection from './components/FooterSection.vue';
+import LoginComponent from './components/LoginComponent.vue';
 </script>

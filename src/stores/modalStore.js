@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-
+debugger;
 export const useModalStore = defineStore('modalStore', {
   state: () => ({
     isOpen: false, // Estado para controlar si el modal está abierto o cerrado
@@ -8,6 +8,7 @@ export const useModalStore = defineStore('modalStore', {
   actions: {
     // Función para abrir el modal
     openModal(event) {
+      debugger;
       this.selectedEvent = event; // Almacenar el evento seleccionado
       this.isOpen = true; // Cambiar el estado a abierto
     },

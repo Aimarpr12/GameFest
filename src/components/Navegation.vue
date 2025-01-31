@@ -3,16 +3,10 @@
     <div class="flex items-center justify-between p-4">
       <!-- Logo -->
       <div class="flex items-center">
-        <div>
-          <RouterLink to="/" class="text-sm dark:text-blue-500 hover:underline">
-            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-4" alt="Flowbite Logo" />
-          </RouterLink>
-        </div>
-        <div>
-          <span class="text-2xl font-semibold whitespace-nowrap dark:text-white">
-            GameFest
-          </span>
-        </div>
+        <RouterLink to="/" class="text-sm dark:text-blue-500 hover:underline">
+          <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-4" alt="Flowbite Logo" />
+        </RouterLink>
+        <span class="text-2xl font-semibold whitespace-nowrap dark:text-white">GameFest</span>
       </div>
 
       <!-- Botón para abrir/cerrar el menú en pantallas pequeñas -->
@@ -26,23 +20,26 @@
         </svg>
       </button>
 
-      <!-- Menú desplegable (visible solo en pantallas pequeñas) -->
-      <div :class="{'hidden': !isMenuOpen, 'w-full': isMenuOpen, 'md:block': true}" id="navbar-default">
-        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-white">
-          <li>
-            <RouterLink to="/login" class="text-sm dark:text-blue-500 hover:underline">
-              Iniciar Sesion 
-            </RouterLink>
+      <!-- Menú desplegable -->
+      <div :class="{ 'hidden': !isMenuOpen, 'w-full': isMenuOpen, 'md:block': true }" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-white">
+          <li v-if="!userStore.isAuthenticated">
+              <button v-if="!userStore.isAuthenticated" @click="openLoginModal"
+                class="text-sm text-blue-500 hover:underline">
+                Iniciar Sesión
+              </button>
+          </li>
+          <li v-else>
+            <button @click="logout" class="text-sm dark:text-blue-500 hover:underline">
+              Cerrar Sesión
+            </button>
           </li>
           <li>
-            <RouterLink to="/eventos" class="text-sm hover:underline">
-              Eventos
-            </RouterLink>
+            <RouterLink to="/eventos" class="text-sm hover:underline">Eventos</RouterLink>
           </li>
           <li>
-            <RouterLink to="/juegos" class="text-sm hover:underline">
-              Juegos
-            </RouterLink>
+            <RouterLink to="/juegos" class="text-sm hover:underline">Juegos</RouterLink>
           </li>
         </ul>
       </div>
@@ -51,21 +48,28 @@
 </template>
 
 <script>
+import { useUserStore } from '@/stores/userStore';
+import { useModalLogInStore } from '@/stores/modalLogInStore';
+
 export default {
-  data() {
-    return {
-      isMenuOpen: false, // Estado para controlar si el menú está abierto o cerrado
+  setup() {
+    const userStore = useUserStore();
+    const modalStore = useModalLogInStore();
+
+    const openLoginModal = () => {
+      debugger;
+      modalStore.openLoginModal();
     };
-  },
-  methods: {
-    // Método para alternar la visibilidad del menú
-    toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen;
-    },
-  },
+
+    const logout = () => {
+      userStore.logout();
+    };
+
+    return { userStore, modalStore, openLoginModal, logout };
+  }
 };
 </script>
 
 <style scoped>
-/* Aquí puedes añadir más estilos si es necesario */
+/* Agrega estilos personalizados si lo deseas */
 </style>
