@@ -41,6 +41,12 @@
           <li>
             <RouterLink to="/juegos" class="text-sm hover:underline">Juegos</RouterLink>
           </li>
+          <li v-if="userStore.isAuthenticated">
+            <RouterLink to="/profile" class="text-sm hover:underline">Perfil</RouterLink>
+          </li>
+          <li v-if="userStore.isAuthenticated && userStore.user?.role === 'admin'">
+            <RouterLink to="/create-event" class="text-sm hover:underline">Nuevo Evento</RouterLink>
+          </li>
         </ul>
       </div>
     </div>
