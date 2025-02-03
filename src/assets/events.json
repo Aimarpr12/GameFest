@@ -6,7 +6,8 @@
       "fecha": "2025-02-14",
       "hora": "16:00",
       "plazasLibres": 200,
-      "imagen": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1xVWH0.img?w=768&h=432&m=6"
+      "imagen": "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1xVWH0.img?w=768&h=432&m=6", 
+      "asistentes": []
     },
     {
       "id": 2,
@@ -15,7 +16,8 @@
       "fecha": "2025-02-14",
       "hora": "18:00",
       "plazasLibres": 150,
-      "imagen": "https://www.redes-sociales.com/wp-content/uploads/2025/01/nintendo-gameboy-juego.jpg"
+      "imagen": "https://www.redes-sociales.com/wp-content/uploads/2025/01/nintendo-gameboy-juego.jpg", 
+      "asistentes": []
     },
     {
       "id": 3,
@@ -24,7 +26,8 @@
       "fecha": "2025-02-15",
       "hora": "10:00",
       "plazasLibres": 32,
-      "imagen": "https://esports.as.com/2020/08/31/ignition-series/G2-quinto-titulo-consecutivo-torneos_1387671220_486307_1440x600.jpg"
+      "imagen": "https://esports.as.com/2020/08/31/ignition-series/G2-quinto-titulo-consecutivo-torneos_1387671220_486307_1440x600.jpg", 
+      "asistentes": []
     },
     {
       "id": 4,
@@ -33,7 +36,8 @@
       "fecha": "2025-02-15",
       "hora": "12:00",
       "plazasLibres": 50,
-      "imagen": "https://i.ytimg.com/vi/FWHoVe0pMgA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBmuEHjUi32fArDRlYCT_cMAz2Y_w"
+      "imagen": "https://i.ytimg.com/vi/FWHoVe0pMgA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBmuEHjUi32fArDRlYCT_cMAz2Y_w", 
+      "asistentes": []
     },
     {
       "id": 5,
@@ -42,7 +46,8 @@
       "fecha": "2025-02-15",
       "hora": "15:00",
       "plazasLibres": 100,
-      "imagen": "https://gameover-pnx.com/wp-content/uploads/2024/05/DALL%C2%B7E-2024-05-26-11.55.00-A-16_9-image-depicting-artificial-intelligence-in-video-games.-The-scene-shows-a-futuristic-high-tech-environment-with-a-digital-interface-displaying.webp"
+      "imagen": "https://gameover-pnx.com/wp-content/uploads/2024/05/DALL%C2%B7E-2024-05-26-11.55.00-A-16_9-image-depicting-artificial-intelligence-in-video-games.-The-scene-shows-a-futuristic-high-tech-environment-with-a-digital-interface-displaying.webp", 
+      "asistentes": []
     },
     {
       "id": 6,
@@ -51,7 +56,8 @@
       "fecha": "2025-02-15",
       "hora": "17:00",
       "plazasLibres": 200,
-      "imagen": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2023/07/retro-games.jpg"
+      "imagen": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2023/07/retro-games.jpg", 
+      "asistentes": []
     },
     {
       "id": 7,
@@ -60,7 +66,8 @@
       "fecha": "2025-02-16",
       "hora": "11:00",
       "plazasLibres": 80,
-      "imagen": "https://esports.as.com/2019/07/11/dota-2/Cosplayers-Dota-Major-Hamburgo_1262583745_231066_1440x600.jpg"
+      "imagen": "https://esports.as.com/2019/07/11/dota-2/Cosplayers-Dota-Major-Hamburgo_1262583745_231066_1440x600.jpg", 
+      "asistentes": []
     },
     {
       "id": 8,
@@ -69,7 +76,8 @@
       "fecha": "2025-02-16",
       "hora": "13:00",
       "plazasLibres": 120,
-      "imagen": "https://i.ytimg.com/vi/gcB4qFb49HM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBvH2KzLSY4Nl1KCz_aCa82hgbgHg"
+      "imagen": "https://i.ytimg.com/vi/gcB4qFb49HM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBvH2KzLSY4Nl1KCz_aCa82hgbgHg", 
+      "asistentes": []
     },
     {
       "id": 9,
@@ -78,7 +86,8 @@
       "fecha": "2025-02-16",
       "hora": "15:00",
       "plazasLibres": 48,
-      "imagen": "https://i.ytimg.com/vi/71kthFNC4sQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAR3PykOTt1fcyLndzI33P362p6wQ"
+      "imagen": "https://i.ytimg.com/vi/71kthFNC4sQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAR3PykOTt1fcyLndzI33P362p6wQ", 
+      "asistentes": []
     }
   ]
   

@@ -69,6 +69,7 @@ export default {
 
     const logout = () => {
       userStore.logout();
+      
     };
 
     return { userStore, modalStore, openLoginModal, logout };

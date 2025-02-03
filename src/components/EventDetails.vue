@@ -40,7 +40,7 @@
       </div>
 
       <!-- Botón de confirmación -->
-      <button :disabled="!confirmed" @click="closeModal"
+      <button :disabled="!confirmed" @click="joinEvent(selectedEvent?.id)"
         class="mt-4 w-full bg-purple-600 text-white py-2 rounded-md disabled:bg-gray-400">
         Confirma el check superior
       </button>
@@ -50,6 +50,7 @@
 
 <script>
 import { useModalStore } from '@/stores/modalStore';
+import { useUserStore } from '@/stores/userStore';
 
 export default {
   computed: {
@@ -74,6 +75,14 @@ export default {
       const modalStore = useModalStore();
       modalStore.closeModal(); // Cerrar el modal
     },
+    joinEvent(eventId) {
+      debugger;
+      const userStore = useUserStore();
+      userStore.joinEvent(eventId);
+      this.$emit('close');
+      const modalStore = useModalStore();
+      modalStore.closeModal();
+    }
   },
 };
 </script>
